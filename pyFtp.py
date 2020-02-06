@@ -9,11 +9,11 @@ ftpCon = ftplib.FTP(mUrl, mUname, mPass)
 # remote www folder
 ftpCon.cwd('public_html')
 # folder to upload to (project name) www/folder || 'folder name' or None
-projectName = 'testupload'
+projectName = 'image-gal'
 # build folder
 fromDirectory = os.path.join('..', '..', 'projects', 'image-gal', 'build')
 # allowed file types
-allowedFiles = ['.html', '.js', '.css', '.json', '.jpg', '.gif', '.txt']
+allowedFiles = ['.html', '.js', '.css', '.json', '.jpg', '.gif', '.xml', 'ico', '.png', '.txt']
 # directory names to upload
 allowedDirs = ['scripts', 'static', 'js', 'media', 'css']
 
